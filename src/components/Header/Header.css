@@ -1,0 +1,85 @@
+.standard__hearder {
+    background-color: var(--standard-grey);
+    color: var(--standard-white);
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo__name {
+    margin: 15px 70px;
+    padding: 0;
+    text-align: center;
+}
+
+.titulo_app {
+    margin: 0;
+    padding: 0;
+}
+
+.logo__chat {
+    width: 100px;
+}
+
+.lista__navegacao {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0 50px;
+    padding: 0;
+    color: var(--standard-white);
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.itens_navegacao {
+    margin: 0 20px;
+    text-decoration: none;
+}
+
+.itens_navegacao:hover {
+    color: var(--standard-blue);
+    transition: 0.5s;
+}
+
+.link__navegacao {
+    color: var(--standard-white);
+    text-decoration: none;
+}
+
+@media screen and (max-width: 720px) {
+    .logo__name {
+        margin: 15px 35px;
+    }
+    .lista__navegacao {
+        margin: 0 25px;
+    }
+    .itens_navegacao {
+        margin: 0 10px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    
+    .logo__chat {
+        width: 70px;
+    }
+
+    .titulo_app {
+        font-size: 25px;
+    }
+
+    .logo__name {
+        margin: 15px 18px;
+    }
+    .lista__navegacao {
+        margin: 0 14px;
+        font-size: 16px;
+    }
+    .itens_navegacao {
+        margin: 0 5px;
+    }
+}
