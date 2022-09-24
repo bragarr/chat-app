@@ -8,11 +8,11 @@ export function App() {
 
   return (
     <BrowserRouter>
-        <main className="App">
+        <div className="App">
           <Header />
           <Outlet />
           <MainRoutes />
-        </main>
+        </div>
     </BrowserRouter>
   )
 }

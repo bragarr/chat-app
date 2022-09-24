@@ -1,0 +1,199 @@
+.conteudo__principal {
+    display: inline-block;
+    text-align: center;
+}
+
+.container__sessao--login {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--standard-grey);
+    color: var(--standard-white);
+    margin: 4em 0;
+    padding: 2em 2em;
+}
+
+.container__chatapp {
+    margin: 0 40px;
+    padding: 0;
+}
+
+.logo {
+    width: 250px;
+}
+
+.descricao__app {
+    margin: 0;
+    padding: 0;
+    font-size: 60px;
+}
+
+.container__login {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    margin: 0 40px;
+}
+
+.titulo__acesso {
+    font-size: 45px;
+}
+
+.input__usuario {
+    width: 500px;
+    font-size: 20px;
+    padding: 16px 5px;
+    background-color: var(--strong-grey);
+    color: var(--standard-white);
+    user-select: none;
+}
+
+.input__usuario:focus {
+    outline: none;
+}
+
+.input__usuario::placeholder {
+    color: var(--standard-white);
+}
+
+.botao__login {
+    font-size: 30px;
+    background-color: var(--strong-grey);
+    color: var(--standard-white);
+    cursor: pointer;
+    border: none;
+    padding: 15px 0;
+}
+
+@media screen and (max-width: 1200px) {
+    .logo {
+        width: 150px;
+    }
+    
+    .descricao__app {
+        font-size: 40px;
+    }
+
+    .container__login {
+        row-gap: 30px;
+    }
+
+    .titulo__acesso {
+        font-size: 30px;
+    }
+    
+    .input__usuario {
+        width: 400px;
+        font-size: 15px;
+        padding: 16px 5px;
+    }
+
+    .botao__login {
+        font-size: 20px;
+        padding: 15px 0;
+    }
+    
+}
+
+@media screen and (max-width: 900px) {
+
+    .container__chatapp {
+        margin: 0 20px;
+    }
+    
+    .container__login {
+        margin: 0 20px;
+    }
+
+
+    .logo {
+        width: 120px;
+    }
+    
+    .descricao__app {
+        font-size: 35px;
+    }
+
+    .titulo__acesso {
+        font-size: 25px;
+    }
+    
+    .input__usuario {
+        width: 350px;
+        font-size: 12px;
+        padding: 16px 5px;
+    }
+
+    .botao__login {
+        font-size: 18px;
+        padding: 15px 0;
+    }
+    
+}
+
+@media screen and (max-width: 720px) {
+
+    .container__sessao--login {
+        flex-direction: column;
+    }
+
+    .container__chatapp {
+        margin: 0 15px;
+    }
+    
+    .container__login {
+        margin: 0 15px;
+    }
+    
+    .input__usuario {
+        width: 250px;
+        font-size: 12px;
+        padding: 16px 5px;
+    }
+
+    .botao__login {
+        font-size: 18px;
+        padding: 15px 0;
+    }
+    
+}
+
+@media screen and (max-width: 420px) {
+
+    .container__chatapp {
+        margin: 0;
+    }
+    
+    .container__login {
+        margin: 0;
+    }
+
+    .logo {
+        width: 100px;
+    }
+    
+    .descricao__app {
+        font-size: 30px;
+    }
+
+    .container__login {
+        row-gap: 20px;
+    }
+
+    .titulo__acesso {
+        font-size: 20px;
+    }
+    
+    .input__usuario {
+        width: 200px;
+        font-size: 10px;
+        padding: 16px 5px;
+    }
+
+    .botao__login {
+        font-size: 16px;
+        padding: 15px 0;
+    }
+    
+}

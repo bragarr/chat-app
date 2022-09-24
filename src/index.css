@@ -1,5 +1,6 @@
 :root {
   --standard-grey: #5c5c5c;
+  --strong-grey: #3a3838;
   --standard-white: #ebe5e5;
   --standard-blue: #2a85ee;
 }
@@ -7,4 +8,5 @@
 body {
   margin: 0;
   font-family: "Arial", sans-serif;
+  text-align: center;
 }
