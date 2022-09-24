@@ -23,19 +23,19 @@
 }
 
 .logo__elden {
-    width: 400px;
+    width: 30vw;
     margin: 0;
     padding: 0;
 }
 
 .texto__apresentacao {
-    font-size: 20px;
+    font-size: 25px;
     margin: 0;
     padding: 0;
 }
 
 .imagem__elden {
-    width: 720px;
+    width: 45vw;
 }
 
 .botao__inscricao {
@@ -48,4 +48,136 @@
     font-weight: 700;
     margin: 30px 0;
     display: inline-block;
+}
+
+.depoimentos {
+    color: var(--standard-grey);
+    text-align: left;
+}
+
+.container__depoimentos {
+    margin: 30px 60px;
+}
+
+.depoimento {
+    padding: 20px 0;
+}
+
+.citacao {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 60px;
+}
+
+.citacao__depoimento {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.nome_depoimento {
+    text-align: right;
+    font-size: 20px;
+    font-style: italic;
+
+}
+
+@media screen and (max-width: 1280px) {
+    
+    .titulo__apresentacao {
+        font-size: 30px;
+    }
+    
+    .logo__elden {
+        width: 30vw;
+    }
+    
+    .texto__apresentacao {
+        font-size: 18px;
+    }
+    
+    .imagem__elden {
+        width: 45vw;
+    }
+    
+    .botao__inscricao {
+        font-size: 25px;
+    }
+
+    .citacao__depoimento {
+        font-size: 20px;
+        font-weight: 700;
+    }
+    
+    .nome_depoimento {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .apresentacao {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:center;
+        text-align: left;
+        column-gap: 100px;
+        padding: 80px 50px;
+    }
+    
+    .titulo__apresentacao {
+        font-size: 25px;
+    }
+    
+    .logo__elden {
+        width: 30vw;
+    }
+    
+    .texto__apresentacao {
+        font-size: 18px;
+    }
+    
+    .imagem__elden {
+        width: 60vw;
+    }
+    
+    .botao__inscricao {
+        font-size: 20px;
+    }
+
+    .citacao__depoimento {
+        font-size: 18px;
+        font-weight: 700;
+    }
+    
+    .nome_depoimento {
+        font-size: 15px;
+    }
+
+    .citacao {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .botao__inscricao {
+        display: block;
+        text-align: center;
+    }
+
+    .citacao__depoimento {
+        font-size: 18px;
+        font-weight: 700;
+    }
+    
+    .nome_depoimento {
+        font-size: 15px;
+    }
+
+    .citacao {
+        flex-direction: column;
+    }
 }
