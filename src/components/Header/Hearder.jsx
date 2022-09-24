@@ -17,9 +17,24 @@ export function Header() {
             </figure>
             <nav>
                 <ul className="lista__navegacao">
-                    <Link to={"/"} className="link__navegacao"><li className="itens_navegacao">Home</li></Link>
-                    <Link to={"login"} className="link__navegacao"><li className="itens_navegacao">Login</li></Link>
-                    <li className="itens_navegacao">TBD</li>
+                    <Link to={"/"}
+                    className="link__navegacao">
+                        <li className="itens_navegacao">
+                            Home
+                        </li>
+                    </Link>
+                    <Link to={"login"}
+                    className="link__navegacao">
+                        <li className="itens_navegacao">
+                            Login
+                        </li>
+                    </Link>
+                    <Link to={"signin"}
+                    className="link__navegacao">
+                        <li className="itens_navegacao">
+                            Sign In
+                        </li>
+                    </Link>
                 </ul>
             </nav>
         </header>
