@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import { Login } from '../../pages/Login/Login';
 
 import './Header.css';
 import logo from '../../assets/chat_logo.svg'
@@ -33,6 +32,12 @@ export function Header() {
                     className="link__navegacao">
                         <li className="itens_navegacao">
                             Sign In
+                        </li>
+                    </Link>
+                    <Link to={"chatroom"}
+                    className="link__navegacao">
+                        <li className="itens_navegacao">
+                            Chat Room
                         </li>
                     </Link>
                 </ul>

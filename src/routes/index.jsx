@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom"
 import { Home } from '../pages/Home/Home';
 import { Login } from '../pages/Login/Login';
 import { SignIn } from "../pages/SignIn/SignIn";
+import { ChatRoom } from "../pages/ChatRoom/ChatRoom";
 
 export function MainRoutes() {
     return(
@@ -10,6 +11,7 @@ export function MainRoutes() {
             <Route path="/" element={<Home />} />
             <Route path="login" element={<Login />} />
             <Route path="signin" element={<SignIn />} />
+            <Route path="chatroom" element={<ChatRoom />} />
         </Routes>
     )
 }

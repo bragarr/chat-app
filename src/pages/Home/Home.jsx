@@ -13,7 +13,7 @@ export function Home() {
                 <article className="container__apresentacao">
                     <h2
                         className="titulo__apresentacao">
-                        E o tema desse mês é: 
+                        E o tema deste mês é: 
                         <br>
                         </br>
                         <img src={logoelden}
