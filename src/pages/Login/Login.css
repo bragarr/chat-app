@@ -68,6 +68,10 @@
     padding: 15px 0;
 }
 
+.container_mensagem {
+    display: block;
+}
+
 @media screen and (max-width: 1200px) {
     .logo {
         width: 150px;

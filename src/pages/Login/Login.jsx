@@ -1,7 +1,7 @@
 import './Login.css';
 import logo from '../../assets/chat_logo.svg';
 
-import { MdEmail } from "react-icons/md";
+import { Link } from 'react-router-dom';
 
 export function Login() {
     return(
@@ -30,8 +30,17 @@ export function Login() {
                     >
                         Entrar
                     </button>
-                    <span></span>
+                    <article className="container_mensagem">
+                        <p>
+                            Ainda não possui uma conta? 
+                            <Link to={"/signin"}>
+                                Registre-se
+                            </Link>
+                        </p>
+                        <span></span>
+                    </article>
                 </form>
+                
             </section>
         </main>
     )
