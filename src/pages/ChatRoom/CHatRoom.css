@@ -1,0 +1,20 @@
+.espaço__chat {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.container__usuarios {
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.container__mensagens {
+    grid-column: span 2;
+}
+
+.container__enviar {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom';
-import { useAuth } from "../../hooks/useAuth";
+import { useAuth } from '../../hooks/useAuth';
+
+import { HiMenu } from 'react-icons/hi';
 
 import './Header.css';
 import logo from '../../assets/chat_logo.svg'
@@ -9,6 +11,7 @@ const DefineUserHearder = () => {
 
     return logado > 0 ?
     <nav className="navegacao">
+        {/* <HiMenu className="botao__menu--externo" /> */}
         <Link to={"/"}
         className="link__navegacao">
             Home
@@ -24,6 +27,7 @@ const DefineUserHearder = () => {
     </nav>
     :
     <nav className="navegacao">
+        {/* <HiMenu className="botao__menu--externo" /> */}
         <Link to={"/"}
         className="link__navegacao">
             Home
@@ -54,6 +58,7 @@ export function Header() {
                 </Link>
                 <h1 className="titulo_app">chatApp</h1>
             </figure>
+            {/* <HiMenu className="botao__menu" /> */}
             <DefineUserHearder />
         </header>
     );

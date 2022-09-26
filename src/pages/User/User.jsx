@@ -1,6 +1,9 @@
 import { useNavigate } from 'react-router-dom';
 
+import { FaUserCircle } from 'react-icons/fa';
+
 import '../Login/Login.css';
+import './User.css';
 import logo from '../../assets/chat_logo.svg';
 
 
@@ -35,7 +38,10 @@ export function User() {
                 </figure>
                 <form className="container__login">
                     <h2 className="titulo__acesso">Bom ter você aqui</h2>
-                    <p>{nomeUsuario}</p>
+                    <figure className="container__usuario">
+                        <FaUserCircle className="icone__perfil"/>
+                        <p className="user__name">{nomeUsuario}</p>
+                    </figure>
                     <button
                         type="button"
                         className="botao__login"
@@ -44,7 +50,6 @@ export function User() {
                         Sair
                     </button>
                 </form>
-                
             </section>
         </main>
     )

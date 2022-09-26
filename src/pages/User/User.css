@@ -1,0 +1,17 @@
+.container__usuario {
+    margin: 0;
+    padding: 0;
+}
+
+.icone__perfil {
+    font-size: 150px;
+    text-align: center;
+}
+
+.user__name {
+    font-size: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
