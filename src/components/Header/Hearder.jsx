@@ -1,7 +1,47 @@
 import { Link } from 'react-router-dom';
+import { useAuth } from "../../hooks/useAuth";
 
 import './Header.css';
 import logo from '../../assets/chat_logo.svg'
+
+const DefineUserHearder = () => {
+    let { logado } = useAuth();
+
+    return logado > 0 ?
+    <nav className="navegacao">
+        <Link to={"/"}
+        className="link__navegacao">
+            Home
+        </Link>
+        <Link to={"user"}
+        className="link__navegacao">
+            User
+        </Link>
+        <Link to={"chatroom"}
+        className="link__navegacao">
+            Chat Room
+        </Link>
+    </nav>
+    :
+    <nav className="navegacao">
+        <Link to={"/"}
+        className="link__navegacao">
+            Home
+        </Link>
+        <Link to={"login"}
+        className="link__navegacao">
+            Login
+        </Link>
+        <Link to={"signin"}
+        className="link__navegacao">
+            Sign In
+        </Link>
+        <Link to={"chatroom"}
+        className="link__navegacao">
+            Chat Room
+        </Link>
+    </nav>
+}
 
 export function Header() {
     return(
@@ -14,34 +54,7 @@ export function Header() {
                 </Link>
                 <h1 className="titulo_app">chatApp</h1>
             </figure>
-            <nav>
-                <ul className="lista__navegacao">
-                    <Link to={"/"}
-                    className="link__navegacao">
-                        <li className="itens_navegacao">
-                            Home
-                        </li>
-                    </Link>
-                    <Link to={"login"}
-                    className="link__navegacao">
-                        <li className="itens_navegacao">
-                            Login
-                        </li>
-                    </Link>
-                    <Link to={"signin"}
-                    className="link__navegacao">
-                        <li className="itens_navegacao">
-                            Sign In
-                        </li>
-                    </Link>
-                    <Link to={"chatroom"}
-                    className="link__navegacao">
-                        <li className="itens_navegacao">
-                            Chat Room
-                        </li>
-                    </Link>
-                </ul>
-            </nav>
+            <DefineUserHearder />
         </header>
     );
 }

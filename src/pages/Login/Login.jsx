@@ -1,9 +1,33 @@
+import { useState } from 'react';
+
 import './Login.css';
 import logo from '../../assets/chat_logo.svg';
 
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { useAuth } from '../../hooks/useAuth';
 
 export function Login() {
+
+    const { logar } = useAuth();
+    const navigate = useNavigate();
+
+    const [email, setEmail] = useState("");
+    const [senha, setSenha] = useState("");
+    const [error, setError] = useState("");
+
+    const verificacaoLogin = () => {
+        if(!email | !senha) {
+            setError("Preencha todos os campos");
+            return;
+        }
+        const res = logar(email, senha);
+        if(res) {
+            setError(res);
+            return;
+        }
+        navigate("/chatroom");
+    }
+
     return(
         <main className="conteudo__principal">
             <section className="container__sessao--login">
@@ -16,17 +40,23 @@ export function Login() {
                 </figure>
                 <form className="container__login">
                     <h2 className="titulo__acesso">Acessar chatApp</h2>
-                    <input type="text" 
+                    <input type="email" 
                     placeholder="Digite o seu email"
                     className="input__usuario"
+                    value={email}
+                    onChange={(e) => [setEmail(e.target.value), setError("")]}
                     />
-                    <input type="text"
+                    <input type="password"
                     placeholder="Digite a sua senha"
+                    value={senha}
+                    onChange={(e) => [setSenha(e.target.value), setError("")]}
                     className="input__usuario"
                     />
+                    {error}
                     <button
-                        type="submit"
+                        type="button"
                         className="botao__login"
+                        onClick={verificacaoLogin}
                     >
                         Entrar
                     </button>
