@@ -11,6 +11,16 @@ export function User() {
 
     const { logout } = useAuth();
     const navigate = useNavigate();
+    let nomeUsuario = "";
+
+    const userToken = JSON.parse(localStorage.getItem("user_token"));
+    const emailUsuario = userToken.email;
+
+    for(let i=0; i < emailUsuario.length; i++) {
+        if(emailUsuario[i] === "@") {
+            nomeUsuario = emailUsuario.slice(0, i)
+        }
+    }
 
 
     return(
@@ -25,6 +35,7 @@ export function User() {
                 </figure>
                 <form className="container__login">
                     <h2 className="titulo__acesso">Bom ter você aqui</h2>
+                    <p>{nomeUsuario}</p>
                     <button
                         type="button"
                         className="botao__login"

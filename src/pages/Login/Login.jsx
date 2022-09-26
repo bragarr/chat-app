@@ -17,7 +17,7 @@ export function Login() {
 
     const verificacaoLogin = () => {
         if(!email | !senha) {
-            setError("Preencha todos os campos");
+            setError("Preencha todos os campos!");
             return;
         }
         const res = logar(email, senha);
@@ -25,7 +25,7 @@ export function Login() {
             setError(res);
             return;
         }
-        navigate("/chatroom");
+        navigate("/user");
     }
 
     return(
@@ -52,7 +52,9 @@ export function Login() {
                     onChange={(e) => [setSenha(e.target.value), setError("")]}
                     className="input__usuario"
                     />
-                    {error}
+                    <span className="mensagem__erro">
+                       {error}
+                    </span>
                     <button
                         type="button"
                         className="botao__login"

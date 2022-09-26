@@ -9,9 +9,7 @@
     justify-content: center;
     align-items: center;
     color: var(--standard-white);
-    background-image: url(../../assets/elden-ring-fight.jpg);
-    background-size:cover;
-    background-repeat: no-repeat;
+    background-color: var(--standard-grey);
     margin: 4em 0;
     padding: 2em 2em;
 }
@@ -57,6 +55,11 @@
 
 .input__usuario::placeholder {
     color: var(--standard-white);
+}
+
+.mensagem__erro {
+    color: var(--standard-red);
+    font-size: 30px;
 }
 
 .botao__login {
