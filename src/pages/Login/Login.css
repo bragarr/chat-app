@@ -72,6 +72,10 @@
     display: block;
 }
 
+error {
+    color: red;
+}
+
 @media screen and (max-width: 1200px) {
     .logo {
         width: 150px;
