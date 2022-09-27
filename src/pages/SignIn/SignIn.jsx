@@ -17,10 +17,10 @@ export function SignIn() {
 
     const verificacaoLogin = () => {
         if(!email | !emailConf | !senha | !senhaConf) {
-            setError("Preencha todos os campos");
+            setError("Preencha todos os campos!");
             return;
         } else if(email !== emailConf || senha !== senhaConf) {
-            setError("Valores diferentes em senha ou e-mail");
+            setError("Valores diferentes em senha ou e-mail!");
             return;
         }
         const res = registro(email, senha);
@@ -29,7 +29,7 @@ export function SignIn() {
             setError(res);
             return;
         }
-        alert("Usuário Cadastrado com sucesso");
+        alert("Usuário Cadastrado com sucesso!");
         navigate("/login");
     }
 
@@ -71,7 +71,9 @@ export function SignIn() {
                     onChange={(e) => [setSenhaConf(e.target.value), setError("")]}
                     className="input__usuario"
                     />
-                    {error}
+                    <span className="mensagem__erro">
+                       {error}
+                    </span>
                     <button
                         type="button"
                         className="botao__login"

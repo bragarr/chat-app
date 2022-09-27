@@ -63,16 +63,16 @@ export function Login() {
                         Entrar
                     </button>
                     <article className="container_mensagem">
-                        <p>
-                            Ainda não possui uma conta? 
-                            <Link to={"/signin"}>
+                    <article>
+                        <p className="texto__redirecionamento">
+                            Ainda não possui uma conta? <Link to={"/signin"}
+                                className="link__redirecionamento">
                                 Registre-se
                             </Link>
                         </p>
-                        <span></span>
                     </article>
-                </form>
-                
+                    </article>
+                </form>                
             </section>
         </main>
     )
