@@ -65,11 +65,13 @@ export function Login() {
                     <article className="container_mensagem">
                     <article>
                         <p className="texto__redirecionamento">
-                            Ainda não possui uma conta? <Link to={"/signin"}
-                                className="link__redirecionamento">
-                                Registre-se
-                            </Link>
+                            Ainda não possui uma conta? 
                         </p>
+                        <Link to={"/signin"}
+                            className="link__redirecionamento texto__redirecionamento">
+                            Registre-se
+                        </Link>
+                        
                     </article>
                     </article>
                 </form>                
