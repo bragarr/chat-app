@@ -1,3 +1,5 @@
+import '../Login/Login.css';
+
 import { FaUserCircle } from 'react-icons/fa';
 
 export function ChatRoom() {
