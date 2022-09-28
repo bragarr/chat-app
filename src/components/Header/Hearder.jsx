@@ -24,7 +24,7 @@ const DefineUserHearder = () => {
                 </Link>
                 <Link to={"user"}
                 className="link__navegacao">
-                    User
+                    Perfil
                 </Link>
                 <Link to={"chatroom"}
                 className="link__navegacao">

@@ -1,8 +1,25 @@
+import { useState } from "react";
+
 import "./ChatRoom.css";
 
 import { FaUserCircle } from 'react-icons/fa';
 
-export function ChatRoom() {;
+export function ChatRoom() {
+
+    const [mensagem, setMensagem] = useState([])
+
+    const enviaMensagem = (e) => {
+        e.preventDefault();
+        let tela = document.querySelector(".container__mensagens");
+        let novaMensagem = document.createElement("p");
+        novaMensagem.classList.add("formato__Mensagem");
+        let conteudoMensagem = document.querySelector(".container__mensagem");
+        novaMensagem.textContent = conteudoMensagem.value;
+        tela.appendChild(novaMensagem);
+        conteudoMensagem.value = "";
+    }
+
+    
     return (
         <section className="espaço__chat">
             <article className="container__usuarios">
@@ -21,14 +38,17 @@ export function ChatRoom() {;
                 </div>
             </article>
             <article className="container__mensagens">
-    
+                <h2 className="amigo__atual">Amigo 1</h2>
             </article>
             <form className="container__enviar">
                 <input type="text"
                 placeholder="Aqui serão digitadas as mensagens"
                 className="container__mensagem"
                 />
-                <button type="submit" className="botao__enviar">
+                <button type="submit" 
+                className="botao__enviar"
+                onClick={enviaMensagem}
+                >
                     Enviar
                 </button>
             </form>

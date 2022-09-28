@@ -46,15 +46,27 @@
 }
 
 .container__mensagens {
-    background-color: var(--strong-grey);
+    background-image: url(../../assets/elden-ring-fight.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     text-align: left;
-    padding: 0 2vw 0 2vw;
+    padding: 0;
     overflow: auto;
     border: 1px solid var(--standard-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+}
+
+.amigo__atual {
+    color: var(--standard-white);
+    background-color: var(--strong-grey);
+    margin: 0;
+    padding: 2rem 2rem;
 }
 
 .container__enviar {
-    background-color: blueviolet;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -69,6 +81,16 @@
     width: 20%;
     text-transform: uppercase;
     cursor: pointer;
+}
+
+.formato__Mensagem {
+    width:max-content;
+    color: var(--standard-white);
+    background-color: var(--standard-blue);
+    margin: 0.75rem 0 0.5rem 2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.75rem;
+    font-size: 1.5rem;
 }
 
 @media screen and (max-width:720px) {
