@@ -14,7 +14,7 @@ export function ChatRoom() {
         conteudoMensagem.value = "";
     }    
     return (
-        <section className="espaço__chat">
+        <section className="espaco__chat">
             <article className="container__usuarios">
                 <h2 className="titulo__secao">Online</h2>
                 <div className="container__conversa">
