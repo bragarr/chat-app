@@ -1,7 +1,5 @@
 import { FaUserCircle } from 'react-icons/fa';
 
-import "./ChatRoom.css";
-
 export function ChatRoom() {
     const enviaMensagem = (e) => {
         e.preventDefault();
