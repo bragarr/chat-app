@@ -37,7 +37,7 @@ export function User() {
                     <h2 className="descricao__app">chatApp</h2>
                 </figure>
                 <form className="container__login">
-                    <h2 className="titulo__acesso">Bom ter você aqui</h2>
+                    <h2 className="titulo__acesso">Bem-vindo de volta!</h2>
                     <figure className="container__usuario">
                         <FaUserCircle className="icone__perfil"/>
                         <p className="user__name">{nomeUsuario}</p>

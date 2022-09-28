@@ -59,7 +59,7 @@
 
 .mensagem__erro {
     color: var(--standard-red);
-    font-size: 30px;
+    font-size: 1.2rem;
 }
 
 .botao__login {

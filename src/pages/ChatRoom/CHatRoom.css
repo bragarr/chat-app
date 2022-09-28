@@ -1,20 +1,122 @@
 .espaço__chat {
+    height: 84.1vh;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 90% 10%;
 }
 
 .container__usuarios {
-    grid-column: span 1;
+    background-color: var(--standard-grey);
     grid-row: span 2;
+    border: 1px solid var(--standard-white);
+}
+
+.titulo__secao {
+    background-color: var(--strong-grey);
+    color: var(--standard-white);
+    margin: 0;
+    padding: 2rem;
+    border: 1px solid var(--standard-white);
+}
+
+.container__conversa {
+    justify-content: left;
+    align-items: center;
+    text-align: left;
+}
+
+.icone__amigo {
+    font-size: 2.5rem;
+    padding: 0 1rem;
+}
+
+.container__amigo {
+    background-color: var(--standard-white);
+    color: var(--strong-grey);
+    margin: 0.25rem 0.1rem;
+    padding: 2rem 0;
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.ativado {
+    background-color: var(--standard-blue);
 }
 
 .container__mensagens {
-    grid-column: span 2;
+    background-color: var(--strong-grey);
+    text-align: left;
+    padding: 0 2vw 0 2vw;
+    overflow: auto;
+    border: 1px solid var(--standard-white);
 }
 
 .container__enviar {
-    position: absolute;
-    bottom: 0;
+    background-color: blueviolet;
     width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.container__mensagem {
+    font-size: 1.2rem;
+    width: 80%;
+}
+
+.botao__enviar {
+    width: 20%;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+@media screen and (max-width:720px) {
+    .titulo__secao {
+        font-size: 1rem;
+    }
+
+    .icone__amigo {
+        font-size: 1.5rem;
+        padding: 0 0.5rem;
+    }
+    
+    .container__amigo {
+        font-size: 0.9rem;
+        padding: 1.5rem 0;
+    }
+
+    .container__mensagem {
+        font-size: 0.75rem;
+    }
+
+    .botao__enviar {
+        font-size: 0.5rem;
+    }
+    
+}
+
+@media screen and (max-width:420px) {
+    .titulo__secao {
+        font-size: 0.75rem;
+    }
+
+    .icone__amigo {
+        font-size: 1.2rem;
+        padding: 0 0.25rem;
+    }
+    
+    .container__amigo {
+        font-size: 0.6rem;
+        padding: 1rem 0;
+    }
+
+    .container__mensagem {
+        font-size: 0.5rem;
+    }
+
+    .botao__enviar {
+        font-size: 0.3rem;
+    }
+    
 }
