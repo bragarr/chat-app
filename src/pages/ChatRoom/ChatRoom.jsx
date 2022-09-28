@@ -1,13 +1,8 @@
-import { useState } from "react";
-
 import "./ChatRoom.css";
 
 import { FaUserCircle } from 'react-icons/fa';
 
 export function ChatRoom() {
-
-    const [mensagem, setMensagem] = useState([])
-
     const enviaMensagem = (e) => {
         e.preventDefault();
         let tela = document.querySelector(".container__mensagens");
@@ -17,9 +12,7 @@ export function ChatRoom() {
         novaMensagem.textContent = conteudoMensagem.value;
         tela.appendChild(novaMensagem);
         conteudoMensagem.value = "";
-    }
-
-    
+    }    
     return (
         <section className="espaço__chat">
             <article className="container__usuarios">
