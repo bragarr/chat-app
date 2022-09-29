@@ -15,6 +15,7 @@ export function ChatRoom() {
             novaMensagem.textContent = conteudoMensagem.value;
             tela.appendChild(novaMensagem);
             conteudoMensagem.value = "";
+            conteudoMensagem.focus();
         }
     }    
     return (
