@@ -9,9 +9,13 @@ export function ChatRoom() {
         let novaMensagem = document.createElement("p");
         novaMensagem.classList.add("formato__Mensagem");
         let conteudoMensagem = document.querySelector(".container__mensagem");
-        novaMensagem.textContent = conteudoMensagem.value;
-        tela.appendChild(novaMensagem);
-        conteudoMensagem.value = "";
+        if(conteudoMensagem.value === "") {
+            return;
+        } else {
+            novaMensagem.textContent = conteudoMensagem.value;
+            tela.appendChild(novaMensagem);
+            conteudoMensagem.value = "";
+        }
     }    
     return (
         <section className="espaco__chat">
